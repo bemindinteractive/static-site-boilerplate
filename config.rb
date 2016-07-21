@@ -17,6 +17,10 @@ page '/*.txt', layout: false
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
 # General configuration
+config[:source] = 'app'
+config[:build_dir] = 'dist'
+
+
 
 # Reload the browser automatically whenever files change
 configure :development do
@@ -47,8 +51,8 @@ configure :build do
   # Minify Javascript on build
   activate :minify_javascript
 
-  # Process and optimize images
-  activate :imageoptim
+  # Minify the HTML
+  activate :minify_html
 
   # Autoprefixer config
   activate :autoprefixer do |config|

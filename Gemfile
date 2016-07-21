@@ -12,7 +12,5 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 gem 'middleman-gh-pages'
-gem 'middleman-imageoptim'
-
-# Rails Gems
+gem "middleman-minify-html"
 gem 'middleman-autoprefixer'
