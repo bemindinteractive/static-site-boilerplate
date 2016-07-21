@@ -21,7 +21,6 @@ config[:source] = 'app'
 config[:build_dir] = 'dist'
 
 
-
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
