@@ -21,6 +21,11 @@ page '/*.txt', layout: false
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+
+  # Autoprefixer config
+  activate :autoprefixer do |config|
+    config.browsers = ['last 2 versions', 'Explorer >= 11']
+  end
 end
 
 ###
@@ -37,8 +42,16 @@ end
 # Build-specific configuration
 configure :build do
   # Minify CSS on build
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
+
+  # Process and optimize images
+  activate :imageoptim
+
+  # Autoprefixer config
+  activate :autoprefixer do |config|
+    config.browsers = ['last 2 versions', 'Explorer >= 11']
+  end
 end
