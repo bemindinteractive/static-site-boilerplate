@@ -29,3 +29,63 @@ You can build the site by running `middleman build` the build process will start
 
 ## Deploy
 This boilerplate become with a a simple Rake configuration that allow you to deploy the build to the project repository. By running `rake publish` the build will start and will be pushed to the `gh-pages` branch by default. If you want to change the deploy branch just edit the `Rakefile`.
+
+
+# Configuration
+You can change the configuration default values by putting `config[:NAME] = 'VALUE'` inside the `config.rb`
+
+Default middleman configurations:
+
+```ruby
+  # Name of the source directory
+  # @return [String]
+  config.define_setting :source,      "source", 'Name of the source directory'
+
+  # Middleman environment. Defaults to :development, set to :build by the build process
+  # @return [String]
+  config.define_setting :environment, ((ENV['MM_ENV'] && ENV['MM_ENV'].to_sym) || :development), 'Middleman environment. Defaults to :development, set to :build by the build process'
+
+  # Which file should be used for directory indexes
+  # @return [String]
+  config.define_setting :index_file,  "index.html", 'Which file should be used for directory indexes'
+
+  # Whether to strip the index file name off links to directory indexes
+  # @return [Boolean]
+  config.define_setting :strip_index_file, true, 'Whether to strip the index file name off links to directory indexes'
+
+  # Whether to include a trailing slash when stripping the index file
+  # @return [Boolean]
+  config.define_setting :trailing_slash, true, 'Whether to include a trailing slash when stripping the index file'
+
+  # Location of javascripts within source.
+  # @return [String]
+  config.define_setting :js_dir,      "javascripts", 'Location of javascripts within source'
+
+  # Location of stylesheets within source. Used by Compass.
+  # @return [String]
+  config.define_setting :css_dir,     "stylesheets", 'Location of stylesheets within source'
+
+  # Location of images within source. Used by HTML helpers and Compass.
+  # @return [String]
+  config.define_setting :images_dir,  "images", 'Location of images within source'
+
+  # Location of fonts within source. Used by Compass.
+  # @return [String]
+  config.define_setting :fonts_dir,   "fonts", 'Location of fonts within source'
+
+  # Location of partials within source. Used by renderers.
+  # @return [String]
+  config.define_setting :partials_dir,   "", 'Location of partials within source'
+
+  # Where to build output files
+  # @return [String]
+  config.define_setting :build_dir,   "build", 'Where to build output files'
+
+  # Default prefix for building paths. Used by HTML helpers and Compass.
+  # @return [String]
+  config.define_setting :http_prefix, "/", 'Default prefix for building paths'
+
+  # Default layout name
+  # @return [String, Symbold]
+  config.define_setting :layout, :_auto_layout, 'Default layout name'
+```
