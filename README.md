@@ -9,7 +9,7 @@
 
 | Package       | Link                       | Version / installation  |
 |:--------------|:---------------------------|:------------------------|
-| *Node.js*     | https://nodejs.org/en/     | version 5+              |
+| *Node.js*     | https://nodejs.org/en/     | version 4+              |
 | *Bundler*     | http://bundler.io/         | `gem install bundler`   |
 
 **Note**: If you get permission error when running `gem install bundler` try to run this command instead `sudo gem install -n /usr/local/bin bundler`
