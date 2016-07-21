@@ -31,7 +31,7 @@ You can build the site by running `middleman build` the build process will start
 This boilerplate become with a a simple Rake configuration that allow you to deploy the build to the project repository. By running `rake publish` the build will start and will be pushed to the `gh-pages` branch by default. If you want to change the deploy branch just edit the `Rakefile`.
 
 
-# Configuration
+## Configuration
 You can change the configuration default values by putting `config[:NAME] = 'VALUE'` inside the `config.rb`
 
 Default middleman configurations:
