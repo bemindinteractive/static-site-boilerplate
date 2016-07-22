@@ -1,1 +1,3 @@
-// This is where it all goes :)
+(function() {
+  // This is where it all goes :)
+})();
