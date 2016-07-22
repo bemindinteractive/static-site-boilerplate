@@ -4,7 +4,7 @@
 // ↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥
 
 @if $google-font-url {
-  @import url($google-font);
+  @import url($google-font-url);
 }
 
 // Metro mode compatibility.
