@@ -3,7 +3,7 @@
 // Last update: 31/03/2016
 // ↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥
 
-@if $google-font {
+@if $google-font-url {
   @import url($google-font);
 }
 
@@ -28,8 +28,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: color($yellow,default);
 
-  @if $google-font {
-    font-family: $google-font, sans-serif;
+  @if $google-font-name {
+    font-family: $google-font-name, sans-serif;
   } @else {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Arial", sans-serif;
   }
