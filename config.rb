@@ -23,6 +23,11 @@ config[:build_dir] = 'dist'
 
 # Reload the browser automatically whenever files change
 configure :development do
+
+  # Activate url prettify
+  activate :directory_indexes
+
+  # Activate livereload
   activate :livereload
 
   # Autoprefixer config
@@ -44,6 +49,9 @@ end
 
 # Build-specific configuration
 configure :build do
+  # Activate url prettify
+  activate :directory_indexes
+
   # Minify CSS on build
   activate :minify_css
 
