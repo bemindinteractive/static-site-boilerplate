@@ -27,8 +27,14 @@ configure :development do
   # Activate url prettify
   activate :directory_indexes
 
+  # Active localization
+  activate :i18n, :mount_at_root => :it
+
   # Activate livereload
   activate :livereload
+
+  # Activate resources hashing
+  activate :asset_hash
 
   # Autoprefixer config
   activate :autoprefixer do |config|
@@ -52,6 +58,9 @@ configure :build do
   # Activate url prettify
   activate :directory_indexes
 
+  # Active localization
+  activate :i18n, :mount_at_root => :it
+
   # Minify CSS on build
   activate :minify_css
 
@@ -60,6 +69,9 @@ configure :build do
 
   # Minify the HTML
   activate :minify_html
+
+  # Activate resources hashing
+  activate :asset_hash
 
   # Autoprefixer config
   activate :autoprefixer do |config|
