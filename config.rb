@@ -5,7 +5,7 @@
 
 # Global settings
 
-ANALYTICSKEY = 'UA-XXXXX-Y'   # To disable GA, leave unset or set to nil
+ANALYTICS_KEY = 'UA-XXXXX-Y'   # To disable GA, leave unset or set to nil
 
 
 # Per-page layout changes:
@@ -63,7 +63,7 @@ configure :build do
   # Enviroment specific settings
 
   # Change to your Google Analytics key (e.g. UA-XXXXX-Y)
-  config[:ga_key] = ANALYTICSKEY
+  config[:ga_key] = ANALYTICS_KEY
 
   # --------------------------------------------------------
 
