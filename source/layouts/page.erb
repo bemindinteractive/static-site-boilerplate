@@ -1,0 +1,11 @@
+<% wrap_layout :layout do %>
+
+    <!-- Get the page content -->
+    <%= yield %>
+
+    <!-- Pass footer content to the :footer block -->
+    <% content_for :footer do %>
+      <%= partial "partials/footer" %>
+    <% end %>
+
+<% end %>

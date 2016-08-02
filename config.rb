@@ -9,6 +9,10 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+# Specific layout
+page "/", :layout => "landing" # Overide home (index.html) layout
+page "/*", :layout => "page"
+
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
