@@ -3,8 +3,8 @@ it:
   meta:
     title: "Titolo Pagina"
     description: Lorem ipsum dolor sit amet consecutor
-    ogTitle: Stati Site
-    ogSiteName: Stati Site
+    ogTitle: Static Site
+    ogSiteName: Sito statico
     ogSiteUrl: http://...
 
   hello: "Ciao"

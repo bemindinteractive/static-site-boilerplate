@@ -2,6 +2,10 @@
 en:
   meta:
     title: "Page Title"
+    description: Lorem ipsum dolor sit amet consecutor
+    ogTitle: Static Site
+    ogSiteName: Static site
+    ogSiteUrl: http://...
 
   hello: "Hello"
   demo: "Demo Page"
