@@ -6,3 +6,7 @@ en:
     ogTitle: Static Site
     ogSiteName: Static site
     ogSiteUrl: http://...
+
+  navigationMenu:
+    home: Home
+    demo: Demo
