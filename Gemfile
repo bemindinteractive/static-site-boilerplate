@@ -10,8 +10,11 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
 # Rails gems
 gem 'scss_lint', require: false
+gem 'sass'
+gem 'sass-globbing'
 
 # Middleman Gems
+gem 'middleman-sprockets', '>= 4.0.0'
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 gem 'middleman-gh-pages'

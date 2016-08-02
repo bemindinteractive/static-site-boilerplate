@@ -30,6 +30,9 @@ configure :development do
   # Active localization
   activate :i18n, :mount_at_root => :it
 
+  # Activate prockets for sass globbing
+  activate :sprockets
+
   # Activate livereload
   activate :livereload
 
@@ -60,6 +63,9 @@ configure :build do
 
   # Active localization
   activate :i18n, :mount_at_root => :it
+
+  # Activate prockets for sass globbing
+  activate :sprockets
 
   # Minify CSS on build
   activate :minify_css
