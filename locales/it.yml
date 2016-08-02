@@ -2,6 +2,10 @@
 it:
   meta:
     title: "Titolo Pagina"
+    description: Lorem ipsum dolor sit amet consecutor
+    ogTitle: Stati Site
+    ogSiteName: Stati Site
+    ogSiteUrl: http://...
 
   hello: "Ciao"
   demo: "Pagina Demo"
