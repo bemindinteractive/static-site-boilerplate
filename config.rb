@@ -2,6 +2,12 @@
 # Page options, layouts, aliases and proxies
 ###
 
+
+# Global settings
+
+ANALYTICSKEY = 'UA-XXXXX-Y'   # To disable GA, leave unset or set to nil
+
+
 # Per-page layout changes:
 #
 # With no layout
@@ -50,15 +56,17 @@ end
 # Helpers
 ###
 
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
 
 # Build-specific configuration
 configure :build do
+
+  # Enviroment specific settings
+
+  # Change to your Google Analytics key (e.g. UA-XXXXX-Y)
+  config[:ga_key] = ANALYTICSKEY
+
+  # --------------------------------------------------------
+
   # Activate url prettify
   activate :directory_indexes
 
