@@ -1,11 +1,13 @@
 <% wrap_layout :layout do %>
 
-    <!-- Get the page content -->
-    <%= yield %>
+    <!-- Check if a body content is passed -->
+    <% if content_for?(:body) %>
+      <%= yield %>
+    <% end %>
 
-    <!-- Pass footer content to the :footer block -->
-    <% content_for :footer do %>
-      <%= partial "partials/footer" %>
+    <!-- Check if a footer content is passed -->
+    <% if content_for?(:footer) %>
+      <%= yield_content :footer %>
     <% end %>
 
 <% end %>

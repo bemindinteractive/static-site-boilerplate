@@ -1,6 +1,16 @@
-<div class="welcome">
-  <h1><%= t('meta.title') %></h1>
-  <p class="doc">
-    <%= link_to "Read Documentation Online", "https://middlemanapp.com", target: "_blank" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<!-- Pass page content to the :body block -->
+<% content_for :body do %>
+
+  <div class="welcome">
+    <h1><%= t('meta.title') %></h1>
+    <p class="doc">
+      <%= link_to "Read Documentation Online", "https://middlemanapp.com", target: "_blank" %>
+    </p>
+  </div>
+
+<% end %>
+
+<!-- Pass footer content to the :footer block -->
+<% content_for :footer do %>
+  <%= partial "partials/footer" %>
+<% end %>
