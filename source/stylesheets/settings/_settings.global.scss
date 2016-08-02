@@ -1,7 +1,7 @@
 // Typography settings
 
-$google-font-name: '';
-$google-font-url: 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+$google-font-name: 'Montserrat';
+$google-font-url: 'https://fonts.googleapis.com/css?family=#{$google-font-name}:400,700';
 
 
 // Layout settings
