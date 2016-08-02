@@ -36,9 +36,6 @@ configure :development do
   # Activate livereload
   activate :livereload
 
-  # Activate resources hashing
-  activate :asset_hash
-
   # Autoprefixer config
   activate :autoprefixer do |config|
     config.browsers = ['last 2 versions', 'Explorer >= 11']
