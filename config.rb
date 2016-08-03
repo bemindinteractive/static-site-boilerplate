@@ -8,6 +8,7 @@
 ANALYTICS_KEY = 'UA-XXXXX-Y'   # To disable GA, leave unset or set to nil
 
 
+
 # Per-page layout changes:
 #
 # With no layout
@@ -16,8 +17,8 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 # Specific layout
-page "/", :layout => "landing" # Overide home (index.html) layout
-page "/*", :layout => "page"
+page "/", layout: "landing" # Overide home (index.html) layout
+page "/*", layout: "page"
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
@@ -25,6 +26,7 @@ page "/*", :layout => "page"
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
 #  which_fake_page: "Rendering a fake page with a local variable" }
+
 
 # General configuration
 config[:source] = 'source'
@@ -63,7 +65,7 @@ configure :build do
   # Enviroment specific settings
 
   # Change to your Google Analytics key (e.g. UA-XXXXX-Y)
-  config[:ga_key] = ANALYTICS_KEY
+  config[:ga_key] = ANALYTICS_KEY != '' ? ANALYTICS_KEY : nil
 
   # --------------------------------------------------------
 
