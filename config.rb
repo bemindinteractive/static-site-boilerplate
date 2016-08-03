@@ -57,19 +57,8 @@ end
 ###
 # Helpers
 ###
-
-# Menu link action
-helpers do
-  def nav_link(text, url, options={})
-    url = '/' + I18n.locale.to_s + url if I18n.locale != I18n.default_locale
-    if current_page.url == url or current_page.url == url + '/'
-      options[:class] = options[:class] ? options[:class] += ' is-active' : options[:class] = 'is-active'
-      return content_tag :span, options do text end
-    else
-      return link_to text, url, options
-    end
-  end
-end
+require "lib/custom_helpers"
+helpers CustomHelpers
 
 # Build-specific configuration
 configure :build do
