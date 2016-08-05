@@ -16,3 +16,4 @@ module CustomHelpers
   end
 
 end
+# page_classes().split(" ").include?(page)) ? {:class => "active"} : {}
