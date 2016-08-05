@@ -3,7 +3,7 @@
 ###
 
 
-# Global settings
+# Global variables
 
 ANALYTICS_KEY = 'UA-XXXXX-Y'   # To disable GA, leave unset or set to nil
 
@@ -12,13 +12,11 @@ ANALYTICS_KEY = 'UA-XXXXX-Y'   # To disable GA, leave unset or set to nil
 # Per-page layout changes:
 #
 # With no layout
-page '/*.xml', layout: false
+page '/*.xml',  layout: false
 page '/*.json', layout: false
-page '/*.txt', layout: false
+page '/*.txt',  layout: false
 
 # Specific layout
-page "/", layout: "landing" # Overide home (index.html) layout
-page "/*", layout: "page"
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
@@ -29,8 +27,9 @@ page "/*", layout: "page"
 
 
 # General configuration
-config[:source] = 'source'
+config[:source]    = 'source'
 config[:build_dir] = 'dist'
+config[:layout]    = 'page'
 
 
 # Reload the browser automatically whenever files change
@@ -40,7 +39,7 @@ configure :development do
   activate :directory_indexes
 
   # Active localization
-  activate :i18n, :mount_at_root => :it
+  activate :i18n, :mount_at_root => false
 
   # Activate prockets for sass globbing
   activate :sprockets
@@ -54,11 +53,10 @@ configure :development do
   end
 end
 
+
 ###
 # Helpers
 ###
-require "lib/custom_helpers"
-helpers CustomHelpers
 
 # Build-specific configuration
 configure :build do
