@@ -4,17 +4,17 @@ layout: landing
 
 <!-- Pass page content to the :body block -->
 <% content_for :header do %>
-  <%= partial "partials/navigation" %>
+  <img src="<%= image_path('bemind.png') %>"
+      srcset="<%= image_path('bemind.png') %> 2x, <%= image_path('bemind.png') %> 1x"
+      class="o-logo"
+      draggable="false" >
 <% end %>
 
 <!-- Pass page content to the :body block -->
 <% content_for :body do %>
 
-  <div>
-    <h1><%= t('meta.title') %></h1>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores distinctio repellendus molestiae, qui dicta incidunt quibusdam a? Officiis obcaecati quisquam qui consequatur suscipit possimus minus nemo nobis, impedit blanditiis exercitationem.</div>
-    <div>Quas laboriosam exercitationem nihil magni ullam aliquid accusantium atque inventore neque molestias eveniet voluptate iure, fugiat, suscipit unde aut! Ab repudiandae molestias laboriosam, pariatur est quasi sapiente tempora quod, quis!</div>
-  </div>
+  <h1><%= t('meta.title') %></h1>
+  <%= partial "partials/navigation" %>
 
 <% end %>
 

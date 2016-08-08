@@ -1,20 +1,18 @@
 <% wrap_layout :layout do %>
 
-    <h1>PAGE</h1>
+  <!-- Check if a body content is passed -->
+  <% if content_for?(:header) %>
+    <%= yield_content :header %>
+  <% end %>
 
-    <!-- Check if a body content is passed -->
-    <% if content_for?(:header) %>
-      <%= yield_content :header %>
-    <% end %>
+  <!-- Check if a body content is passed -->
+  <% if content_for?(:body) %>
+    <%= yield_content :body %>
+  <% end %>
 
-    <!-- Check if a body content is passed -->
-    <% if content_for?(:body) %>
-      <%= yield_content :body %>
-    <% end %>
-
-    <!-- Check if a footer content is passed -->
-    <% if content_for?(:footer) %>
-      <%= yield_content :footer %>
-    <% end %>
+  <!-- Check if a footer content is passed -->
+  <% if content_for?(:footer) %>
+    <%= yield_content :footer %>
+  <% end %>
 
 <% end %>

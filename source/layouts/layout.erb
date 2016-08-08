@@ -4,7 +4,7 @@
     <%= partial "partials/meta" %>
     <%= stylesheet_link_tag :main %>
   </head>
-  <body class="<%= page_classes %>">
+  <body class="b-<%= page_classes.gsub("#{I18n.locale.to_s}_", "b-") %>">
 
     <!-- Get the view content -->
     <%= yield %>

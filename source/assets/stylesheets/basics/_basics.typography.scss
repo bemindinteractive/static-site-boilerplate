@@ -1,0 +1,59 @@
+// ↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧
+// Basics Typography
+// Last update: 08/08/2016
+// ↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥
+
+%heading-rules {
+  line-height: 1.2;
+  color: color($midnight, darker);
+}
+
+
+h1 {
+  @extend %heading-rules;
+  font-size: 4vmax;
+}
+
+
+h2 {
+  @extend %heading-rules;
+  font-size: 3.5vmax;
+}
+
+
+h3 {
+  @extend %heading-rules;
+  font-size: 3vmax;
+}
+
+
+h4 {
+  @extend %heading-rules;
+  font-size: 2.5vmax;
+}
+
+
+h5 {
+  @extend %heading-rules;
+  font-size: 2vmax;
+}
+
+
+h6 {
+  @extend %heading-rules;
+  font-size: 1.6vmax;
+}
+
+
+p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 1.2;
+  color: color($midnight, default);
+
+  @media screen and (break(large)) {
+    font-size: 1.3vmax;
+    line-height: 1.8;
+  }
+}
