@@ -1,4 +1,28 @@
 <nav>
   <%= nav_link(t('navigationMenu.home'), "/", :class => 'c-base cbase__test' ) %>
-  <%= nav_link(t('navigationMenu.demo'), "/demo", :class => 'c-base cbase__test' ) %>
+  <%= nav_link(t('navigationMenu.demo'), "/demo.html", :class => 'c-base cbase__test' ) %>
+  <br>
 </nav>
+
+
+
+
+
+
+<% langs.each do |lang| %>
+  <% if lang == I18n.locale %>
+
+    <% content_tag :p, :class => 'custom classes is-active' do %>
+      <%= lang %>
+    <% end %>
+
+  <% else %>
+
+    <% if lang == I18n.default_locale %>
+      <%= link_to lang, "/#{I18n.default_locale}", :class => 'custom classes' %>
+    <% else %>
+      <%= link_to lang, "#{lang}", :class => 'custom classes' %>
+    <% end %>
+
+  <% end %>
+<% end %>
