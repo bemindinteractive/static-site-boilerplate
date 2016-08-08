@@ -17,7 +17,7 @@
     <% if lang == I18n.default_locale %>
       <%= link_to lang, "/#{I18n.default_locale}", :class => 'custom classes' %>
     <% else %>
-      <%= link_to lang, "#{lang}", :class => 'custom classes' %>
+      <%= link_to lang, "/#{lang}", :class => 'custom classes' %>
     <% end %>
 
   <% end %>
