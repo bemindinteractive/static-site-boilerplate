@@ -61,15 +61,11 @@ end
 # Build-specific configuration
 configure :build do
 
-  # Enviroment specific settings
-
-  # --------------------------------------------------------
-
   # Activate url prettify
   activate :directory_indexes
 
   # Active localization
-  activate :i18n, :mount_at_root => :it
+  activate :i18n, :mount_at_root => false
 
   # Activate prockets for sass globbing
   activate :sprockets
@@ -90,6 +86,7 @@ configure :build do
   activate :autoprefixer do |config|
     config.browsers = ['last 2 versions', 'Explorer >= 11']
   end
+
 end
 
 
