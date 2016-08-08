@@ -14,9 +14,10 @@ gem 'sass'
 gem 'sass-globbing'
 
 # Middleman Gems
-gem 'middleman-sprockets', '>= 4.0.0'
 gem 'middleman', '>= 4.0.0'
+gem 'middleman-sprockets', '>= 4.0.0'
 gem 'middleman-livereload'
 gem 'middleman-gh-pages'
 gem "middleman-minify-html"
 gem 'middleman-autoprefixer'
+gem 'middleman-google-analytics', '~> 2.1'

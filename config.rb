@@ -8,7 +8,6 @@
 ANALYTICS_KEY = 'UA-XXXXX-Y'   # To disable GA, leave unset or set to nil
 
 
-
 # Per-page layout changes:
 #
 # With no layout
@@ -58,13 +57,11 @@ end
 # Helpers
 ###
 
+
 # Build-specific configuration
 configure :build do
 
   # Enviroment specific settings
-
-  # Change to your Google Analytics key (e.g. UA-XXXXX-Y)
-  config[:ga_key] = ANALYTICS_KEY != '' ? ANALYTICS_KEY : nil
 
   # --------------------------------------------------------
 
@@ -93,4 +90,17 @@ configure :build do
   activate :autoprefixer do |config|
     config.browsers = ['last 2 versions', 'Explorer >= 11']
   end
+end
+
+
+# Change to your Google Analytics key (e.g. UA-XXXXX-Y)
+config[:ga_key] = ANALYTICS_KEY != '' ? ANALYTICS_KEY : nil
+
+activate :google_analytics do |ga|
+  # Property ID (default = nil)
+  ga.tracking_id = ANALYTICS_KEY
+  # Tracking in development environment (default = true)
+  ga.development = false
+  # Compress the JavaScript code (default = false)
+  ga.minify = false
 end
