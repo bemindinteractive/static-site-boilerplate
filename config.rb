@@ -26,9 +26,13 @@ page '/*.txt',  layout: false
 
 
 # General configuration
-config[:source]    = 'source'
-config[:build_dir] = 'dist'
-config[:layout]    = 'page'
+config[:source]     = 'source'
+config[:build_dir]  = 'dist'
+config[:layout]     = 'page'
+config[:js_dir]     = 'assets/javascripts'
+config[:css_dir]    = 'assets/stylesheets'
+config[:images_dir] = 'assets/images'
+config[:fonts_dir]  = 'assets/fonts'
 
 
 # Reload the browser automatically whenever files change

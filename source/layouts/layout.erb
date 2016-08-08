@@ -6,11 +6,10 @@
   </head>
   <body class="<%= page_classes %>">
 
-    <!-- Get the page content -->
+    <!-- Get the view content -->
     <%= yield %>
 
     <%= javascript_include_tag :main %>
     <%= google_analytics_universal_tag %>
   </body>
 </html>
-
