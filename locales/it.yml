@@ -9,4 +9,6 @@ it:
 
   navigationMenu:
     home: Home
-    demo: Demo
+    overview: Overview
+    sitemap: Sitemap
+    config: Configuration
