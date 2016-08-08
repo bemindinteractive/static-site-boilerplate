@@ -1,7 +1,8 @@
-<nav>
-  <%= nav_link(t('navigationMenu.home'), "/", :class => 'c-base cbase__test' ) %>
-  <%= nav_link(t('navigationMenu.demo'), "/demo.html", :class => 'c-base cbase__test' ) %>
-  <br>
+<nav class="c-navigation">
+  <%= nav_link(t('navigationMenu.home'), "/", :class => 'c-navigation c-navigation__link' ) %>
+  <%= nav_link(t('navigationMenu.overview'), "/overview.html", :class => 'c-navigation c-navigation__link' ) %>
+  <%= nav_link(t('navigationMenu.sitemap'), "/__middleman/sitemap/", :class => 'c-navigation c-navigation__link' ) %>
+  <%= nav_link(t('navigationMenu.config'), "/__middleman/config/", :class => 'c-navigation c-navigation__link' ) %>
 </nav>
 
 

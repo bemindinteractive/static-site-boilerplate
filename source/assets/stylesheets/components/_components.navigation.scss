@@ -1,0 +1,22 @@
+// ↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧
+// Component Navigation
+// Last update: 08/08/2016
+// ↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥
+
+
+.c-navigation {
+  position: relative;
+  margin: 3rem 0;
+}
+
+
+.c-navigation__link {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 1rem;
+
+  &.is-active {
+    color: color($yellow,default);
+  }
+}
