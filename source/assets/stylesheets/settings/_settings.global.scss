@@ -1,0 +1,45 @@
+// Typography settings
+
+$font-face-name: 'Fakt Soft Pro';
+$google-font-name: '';
+$google-font-url: 'https://fonts.googleapis.com/css?family=#{$google-font-name}:400,700';
+
+
+// Layout settings
+
+$base-spacing    : 8px; // 8px
+$base-spacing-x2 : $base-spacing * 2;
+$base-spacing-x3 : $base-spacing * 3;
+$base-spacing-x4 : $base-spacing * 4;
+$base-spacing-x5 : $base-spacing * 5;
+$base-spacing-x6 : $base-spacing * 6;
+$base-spacing-x7 : $base-spacing * 7;
+
+
+// Debug flags
+
+$use-helper-mediaqueries: true;
+
+
+// Responsive settings (30em > 480px, 48em > 768px, 60em > 960px, 80em > 1280px, 100em > 1600px)
+$breakpoints: (
+  extraSmall : 30em,
+  small      : 48em,
+  medium     : 60em,
+  large      : 80em,
+  extraLarge : 100em
+);
+
+$densities: (
+  1x  : '96dpi',
+  15x : '144dpi',
+  2x  : '192dpi',
+  3x  : '288dpi'
+);
+
+
+// Grid settings
+
+$grid-columns     : 12;
+$grid-use-gutters : false;
+$grid-gutter      : $base-spacing-x2;

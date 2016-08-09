@@ -1,0 +1,25 @@
+<!-- Use title if it's in the page YAML frontmatter -->
+<title><%= t('meta.title') || "Bemind Interactive" %></title>
+<meta name="description" content="<%= t('meta.description') %>">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0">
+<meta name="author" content="Bemind Interactive S.r.l.">
+<meta name="Copyright" content="Copyright © <%= Date.today.year %>">
+<!-- Mobile and optimization metatags -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="width">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="<%= t('meta.ogTitle') %>">
+<link rel="apple-touch-icon" href="/touch-icon.png" >
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="cleartype" content="on">
+<!-- Social metatags -->
+<meta property="og:title" content="<%= t('meta.ogSiteName') %>" >
+<meta property="og:image" content="/share.jpg" >
+<meta property="og:url" content="<%= t('meta.ogSiteUrl') %>" >
+<meta property="og:site_name" content="<%= t('meta.ogSiteName') %>" >
+<meta property="og:description" content="<%= t('meta.description') %>">
+
+<link rel="icon" type="image/png" href="/touch-icon.png" >

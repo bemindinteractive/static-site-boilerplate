@@ -1,0 +1,36 @@
+/*
+ * ↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧
+ * Description: Stylesheet manifest.
+ * Version: 1.0.0
+ * Last update: 08/08/2016
+ * Author: Mattia Astorino
+ * ↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥
+ */
+
+
+/* Import Settings */
+@import 'settings/**/*';
+
+
+/* Import Tools */
+@import 'tools/**/*';
+
+
+/* Import Generics */
+@import 'generics/**/*';
+
+
+/* Import Basics */
+@import 'basics/**/*';
+
+
+/* Import Objects */
+@import 'objects/**/*';
+
+
+/* Import Components */
+@import 'components/**/*';
+
+
+/* Import Trumps */
+@import 'trumps/**/*';

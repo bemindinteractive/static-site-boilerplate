@@ -1,0 +1,13 @@
+---
+en:
+  meta:
+    title: Bemind Interactive
+    description: Lorem ipsum dolor sit amet consecutor
+    ogTitle: Static Site
+    ogSiteName: Static site
+    ogSiteUrl: http://...
+
+  navigationMenu:
+    home: Home
+    sitemap: Sitemap
+    config: Configuration

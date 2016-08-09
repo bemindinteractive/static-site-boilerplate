@@ -8,10 +8,16 @@ gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 # Windows does not come with time zone data
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
+# Rails gems
+gem 'scss_lint', require: false
+gem 'sass'
+gem 'sass-globbing'
+
 # Middleman Gems
 gem 'middleman', '>= 4.0.0'
+gem 'middleman-sprockets', '>= 4.0.0'
 gem 'middleman-livereload'
 gem 'middleman-gh-pages'
-
-# Rails Gems
+gem "middleman-minify-html"
 gem 'middleman-autoprefixer'
+gem 'middleman-google-analytics', '~> 2.1'

@@ -1,0 +1,21 @@
+---
+layout: landing
+---
+
+<!-- Pass page content to the :body block -->
+<% content_for :header do %>
+  <img src="<%= image_path('bemind.png') %>"
+      srcset="<%= image_path('bemind.png') %> 2x, <%= image_path('bemind.png') %> 1x"
+      class="o-logo"
+      draggable="false" >
+<% end %>
+
+<!-- Pass page content to the :body block -->
+<% content_for :body do %>
+  <%= partial "partials/navigation" %>
+<% end %>
+
+<!-- Pass footer content to the :footer block -->
+<% content_for :footer do %>
+  <%= partial "partials/footer" %>
+<% end %>
