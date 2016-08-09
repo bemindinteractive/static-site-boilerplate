@@ -1,25 +1,27 @@
 <nav class="c-navigation">
-  <%= nav_link(t('navigationMenu.home'), "/", :class => 'c-navigation c-navigation__link' ) %>
-  <%= nav_link(t('navigationMenu.overview'), "/overview.html", :class => 'c-navigation c-navigation__link' ) %>
-  <%= nav_link(t('navigationMenu.sitemap'), "/__middleman/sitemap/", :class => 'c-navigation c-navigation__link' ) %>
-  <%= nav_link(t('navigationMenu.config'), "/__middleman/config/", :class => 'c-navigation c-navigation__link' ) %>
+
+  <%= nav_link(
+    t('navigationMenu.home'),
+    "/",
+    :class => 'c-navigation c-navigation__link' )
+  %>
+
+  <%= nav_link(
+    'GitHub',
+    "https://github.com/bemindinteractive/static-site-boilerplate",
+    :class => 'c-navigation c-navigation__link',
+    :target => '_blank' )
+  %>
+
+  <%= nav_link(
+    t('navigationMenu.sitemap'),
+    "/__middleman/sitemap/",
+    :class => 'c-navigation c-navigation__link' )
+  %>
+
+  <%= nav_link(
+    t('navigationMenu.config'),
+    "/__middleman/config/",
+    :class => 'c-navigation c-navigation__link' )
+  %>
 </nav>
-
-
-<% langs.each do |lang| %>
-  <% if lang == I18n.locale %>
-
-    <% content_tag :p, :class => 'custom classes is-active' do %>
-      <%= lang %>
-    <% end %>
-
-  <% else %>
-
-    <% if lang == I18n.default_locale %>
-      <%= link_to lang, "/#{I18n.default_locale}", :class => 'custom classes' %>
-    <% else %>
-      <%= link_to lang, "/#{lang}", :class => 'custom classes' %>
-    <% end %>
-
-  <% end %>
-<% end %>

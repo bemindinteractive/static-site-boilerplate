@@ -42,7 +42,7 @@ configure :development do
   activate :directory_indexes
 
   # Active localization
-  activate :i18n, :mount_at_root => false
+  activate :i18n, :mount_at_root => false, :langs => [:it, :en]
 
   # Activate prockets for sass globbing
   activate :sprockets
@@ -69,7 +69,7 @@ configure :build do
   activate :directory_indexes
 
   # Active localization
-  activate :i18n, :mount_at_root => false
+  activate :i18n, :mount_at_root => false, :langs => [:it, :en]
 
   # Activate prockets for sass globbing
   activate :sprockets

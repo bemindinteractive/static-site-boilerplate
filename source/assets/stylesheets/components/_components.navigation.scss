@@ -11,12 +11,21 @@
 
 
 .c-navigation__link {
-  display: inline-block;
+  display: block;
   text-transform: uppercase;
   font-weight: 700;
-  margin: 0 1rem;
+  margin: 1rem;
+
+  &:hover {
+    color: inherit;
+  }
 
   &.is-active {
     color: color($yellow,default);
+  }
+
+  @media screen and (break(medium)) {
+    display: inline-block;
+    margin: 0 1rem;
   }
 }

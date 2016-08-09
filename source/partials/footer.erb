@@ -1,3 +1,21 @@
 <footer>
-  I'M THE FOOTER
+  <div class="c-lang-switcher">
+    <% langs.each do |lang| %>
+      <% if lang == I18n.locale %>
+
+        <% content_tag :span, :class => 'c-lang-switcher__link is-active' do %>
+          <%= lang %>
+        <% end %>
+
+      <% else %>
+
+        <% if lang == I18n.default_locale %>
+          <%= link_to lang, "/#{I18n.default_locale}", :class => 'c-lang-switcher__link' %>
+        <% else %>
+          <%= link_to lang, "/#{lang}", :class => 'c-lang-switcher__links' %>
+        <% end %>
+
+      <% end %>
+    <% end %>
+  </div>
 </footer>

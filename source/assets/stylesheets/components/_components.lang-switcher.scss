@@ -1,15 +1,26 @@
 // ↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧
-// Basics Links
-// Last update: 08/08/2016
+// Component Language Switcher
+// Last update: 09/08/2016
 // ↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥
 
-a {
-  text-decoration: none;
-  transition: all 100ms;
-  display: inline-block;
-  color: color($midnight, darker);
 
-  &:hover {
-    color: color($yellow, default);
+.c-lang-switcher {
+  position: relative;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+
+.c-lang-switcher__link {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 0.125rem 0.3rem;
+  margin: 0 0.5rem;
+
+  &.is-active {
+    background-color: color($midnight, darker);
+    color: #FFF;
+    border-radius: 2px;
+    cursor: default;
   }
 }

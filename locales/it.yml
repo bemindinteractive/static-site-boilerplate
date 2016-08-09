@@ -9,6 +9,5 @@ it:
 
   navigationMenu:
     home: Home
-    overview: Overview
-    sitemap: Sitemap
-    config: Configuration
+    sitemap: Struttura Sito
+    config: Configurazione
