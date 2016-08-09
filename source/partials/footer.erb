@@ -12,7 +12,7 @@
         <% if lang == I18n.default_locale %>
           <%= link_to lang, "/#{I18n.default_locale}", :class => 'c-lang-switcher__link' %>
         <% else %>
-          <%= link_to lang, "/#{lang}", :class => 'c-lang-switcher__links' %>
+          <%= link_to lang, "/#{lang}", :class => 'c-lang-switcher__link' %>
         <% end %>
 
       <% end %>
