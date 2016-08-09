@@ -28,8 +28,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: color($yellow,default);
 
-  @if $google-font-name and $google-font-name != '' {
-    font-family: $google-font-name, sans-serif;
+  @if $font-face-name and $font-face-name != ''{
+    font-family: $font-face-name, "Segoe UI", "Arial", sans-serif;
+  }
+  @else if $google-font-name and $google-font-name != '' {
+    font-family: $google-font-name, "Segoe UI", "Arial", sans-serif;
   }
   @else {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Arial", sans-serif;
