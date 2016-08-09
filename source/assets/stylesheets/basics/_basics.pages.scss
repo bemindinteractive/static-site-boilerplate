@@ -3,10 +3,6 @@
 // Last update: 08/08/2016
 // ↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥
 
-@if $google-font-url {
-  @import url($google-font-url);
-}
-
 // Metro mode compatibility.
 @-ms-viewport {
   width: device-width;
@@ -28,14 +24,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: color($yellow,default);
 
-  @if $font-face-name and $font-face-name != ''{
-    font-family: $font-face-name, "Segoe UI", "Arial", sans-serif;
+  @if $font-face-name and $font-face-name != '' {
+    font-family: $font-face-name, $font-family;
   }
-  @else if $google-font-name and $google-font-name != '' {
-    font-family: $google-font-name, "Segoe UI", "Arial", sans-serif;
+  @else if $use-google-fonts {
+    @include font("Open Sans", 700);
   }
   @else {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Arial", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, $font-family;
   }
 }
 

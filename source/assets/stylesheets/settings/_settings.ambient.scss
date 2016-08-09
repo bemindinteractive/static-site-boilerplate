@@ -1,8 +1,9 @@
 // Typography settings
 
 $font-face-name: 'Fakt Soft Pro';
-$google-font-name: '';
-$google-font-url: 'https://fonts.googleapis.com/css?family=#{$google-font-name}:400,700';
+$use-google-fonts: true;
+$google-fonts: ( "Open Sans": 400 700 600italic );
+$font-family: "Segoe UI", "Arial", sans-serif;
 
 
 // Layout settings
