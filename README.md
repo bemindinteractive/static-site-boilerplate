@@ -21,7 +21,7 @@
 **NOTE**: *If you get the unresolved dependencies warning try to run `sudo bundle clean --force`*
 
 ## Development
-To start development just run `middleman server` command inside the terminal. A LiveReload istance (http://localhost:4567) will be opened and every file change will be automagically reflected to your browser. All the files will be served from the `./dist` directory. 
+To start with development just run `middleman server` command inside the terminal. A LiveReload istance (http://localhost:4567) will be opened and every file change will be automagically reflected to your browser. All the files will be served from the `./dist` directory. 
 
 
 ## Production build
